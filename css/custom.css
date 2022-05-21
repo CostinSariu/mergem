@@ -1,0 +1,823 @@
+/* Add here all your CSS customizations */
+
+
+
+
+/* FONT SIZES */
+
+h1 { 
+	font-size: calc(22px + 2.75vw)!important;
+	padding-top: 1.25vw;
+	padding-bottom: 1.25vw;
+}
+h2 { 
+	font-size: calc(18px + 2vw)!important;
+	padding-top: 1vw;
+	padding-bottom: 1vw;
+	font-family: Arial, Helvetica, sans-serif!important;
+	letter-spacing: 0px!important;
+}
+h3 {
+	font-size: calc(16px + 1.5vw)!important;
+	padding-top: 0.75vw;
+	padding-bottom: 0.75vw;
+	text-transform: none!important;
+	font-family: Arial, Helvetica, sans-serif!important;
+	letter-spacing: 0px!important;
+}
+p {
+	font-size: calc(14px + 0.5vw)!important;
+}
+.xSubTitleSmall{
+	text-transform: none!important;
+	font-size: calc(14px + 0.5vw)!important;
+}
+.xLandingCtaText{
+	color: white;
+}
+
+@media screen and (min-width: 790px) {
+	h2 { 
+		font-size: calc(18px + 1.75vw)!important;
+		padding-top: 0.75vw;
+		padding-bottom: 0.75vw;
+	}
+	h3 {
+		font-size: calc(16px + 1vw)!important;
+		padding-top: 0.5vw;
+		padding-bottom: 0.5vw;
+	}
+	p {
+		font-size: 15px!important;
+	}
+	.xSubTitleSmall{
+		text-transform: none!important;
+		font-size: 15px!important;
+	}
+	
+}
+@media screen and (max-width: 510px) {
+	.xLandingSubTextColor{
+		display:none!important;
+	}
+}
+
+
+/* STANDARD SIZES */
+.xStandardPadding{
+	padding: 7vw!important;
+}
+.xStandardPaddingLR{
+	padding-left: 7vw!important;
+	padding-right: 7vw!important;
+}
+.xStandardMarginTop{
+	margin-top: calc(33px + 7vw)!important;
+}
+.xStandardTextSplit{
+	margin-bottom: 33px!important;
+}
+
+.xCtaTextCont{
+	text-align: center!important;
+}
+.xCtaBtnCont{
+	width: fit-content!important;
+	flex: unset!important;
+	max-width: unset!important;
+}
+.xMidCtaItemCont{
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin-right: 0px!important;
+	margin-left: 0px!important;
+}
+.xPhotoContFullh{
+	display: flex;
+	position: relative;
+	height: calc(100vh - 70px);
+	width: 100%;
+	overflow: hidden;
+	justify-content: center;
+}
+.xOwlOverride{
+	margin-bottom: 0px!important;
+	/* opacity: 1!important; */
+}
+.isotope-item{
+  transition-delay:  0s!important;
+}
+.xStoryPhotoCont{
+	height: 311px;
+	width: 50%;
+	overflow: hidden;
+}
+.xStoryPhotoCont img{
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.xStoryTextCont{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center!important;
+
+}
+.xCardCont{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+.xCardCont .card{
+	width: 30vw!important;
+	min-width: 250px!important;
+	max-width: 400px!important;
+	margin: 5px;
+}
+.xCardCont .card:hover{
+	border: none!important;
+	box-shadow: 2px 2px 10px 2px rgba(70, 70, 70, 0.6);
+	cursor: pointer;
+	text-decoration: none;
+}
+.xCardCont .card h4{
+	text-align: center!important;
+}
+.xStorySectionCont{
+	margin-left: 33px;
+	margin-right: 33px;
+	margin-bottom: 33px!important;
+	overflow: hidden;
+}
+.card-img, .card-img-bottom, .card-img-top {
+	height: 70%;
+}
+@media screen and (max-width: 991px){
+	.xStoryPhotoCont{
+		order: 1;
+		width: 100%;
+	}
+	.xStoryTextCont{
+		order: 2;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+.xHeaderBuffer{
+	padding-top: calc(2.5rem + 100px)!important;
+}
+@media screen and (max-width: 767px){
+	.xUpperHeader{
+		display: none!important;
+	}
+}
+.xHeaderBuffer2{
+	margin-top: 100px!important;
+}
+.xUpperHeader{
+	display: flex;
+	width: 100%;
+	justify-content: flex-end!important;
+}
+.xUpperHeaderBox{
+	display: flex;
+	flex-direction: row;
+	margin-top: 5px;
+	padding: 0px 0.9rem!important;
+	align-items: center;
+	color: rgb(180, 180, 180);
+}
+.xUpperHeaderBox a{
+	color: rgb(180, 180, 180);
+}
+.xUpperHeaderBox img{
+	height: 15px;
+	width: auto;
+	margin-right: 5px;
+	opacity:35%;
+}
+/* nav burger */
+#header .header-btn-collapse-nav{
+	background: rgb(180, 180, 180)!important;
+}
+.fa-bars {
+    color: black;
+}
+
+/* landing page slideshow overlay opacity */
+.rev_slider li.slide-overlay .slotholder:after {
+	opacity: 0;
+}
+/* nav active button color */
+a.active{
+    color: rgb(0, 0, 0)!important;
+}
+/* nav button color */
+#header .header-nav.header-nav-links:not(.header-nav-light-text) nav > ul > li > a, #header .header-nav.header-nav-line:not(.header-nav-light-text) nav > ul > li > a {
+    color: rgb(180, 180, 180);
+}
+/* nav hover button color */
+#header .header-nav.header-nav-links:not(.header-nav-light-text) nav > ul > li:hover > a, #header .header-nav.header-nav-line:not(.header-nav-light-text) nav > ul > li > a {
+    color: rgb(0, 0, 0);
+}
+
+html.sticky-header-active #header .header-body.header-body-bottom-border {
+	border-bottom: none !important;
+    box-shadow: none;
+}
+/* nav active button color HEADER DROP */
+html.sticky-header-active a.active{
+    color: rgb(0, 0, 0)!important;
+}
+/* nav button color HEADER DROP */
+html.sticky-header-active #header .header-nav.header-nav-links:not(.header-nav-light-text) nav > ul > li > a, #header .header-nav.header-nav-line:not(.header-nav-light-text) nav > ul > li > a {
+    color: rgb(180, 180, 180);
+}
+/* nav hover button color HEADER DROP */
+html.sticky-header-active #header .header-nav.header-nav-links:not(.header-nav-light-text) nav > ul > li:hover > a, #header .header-nav.header-nav-line:not(.header-nav-light-text) nav > ul > li > a {
+    color: rgb(0, 0, 0);
+}
+.header-container{
+	position: absolute!important;
+	background: white!important;
+}
+@media screen and (max-width: 430px){
+	.header-logo img{
+		width: calc(50px + 45vw)!important;
+	}
+	.xLogoHeaderCont{
+		width: fit-content!important;
+	}
+}
+
+/* Replaced landing text "text-color-light" class */
+.xLandingTextColor{
+	color: white;
+	text-shadow: 2px 2px 5px rgba(90, 90, 90, 0.8);
+}
+/* Replaced landing text "font-weight-light text-color-light" class */
+.xLandingSubTextColor{
+	color: white;
+	font-weight: bold!important;
+	text-shadow: 1px 1px 3px rgba(70, 70, 70, 0.8);
+}
+
+
+.xLandingSquare{
+	stroke: rgba(173, 215, 255, 0.65)!important;
+}
+
+
+.xLandingBannerContainer{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	bottom: 0px;
+	z-index: 20;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: flex-end;
+	padding-right: 20px;
+	text-indent: unset!important;
+}
+.xLandingYearsNum{
+	font-size: calc(50px + 2.5vw)!important;
+	width: fit-content!important;
+	height: auto!important;
+	color: white!important;
+	margin-bottom: 0px!important;
+	line-height: 1!important;
+	letter-spacing: initial!important;
+	text-shadow: 2px 2px 5px rgba(90, 90, 90, 0.8);
+	font-family: Arial, Helvetica, sans-serif!important;
+
+	
+}
+.xLandingYearsText{
+	font-size: calc(14px + 1vw)!important;
+	width: fit-content!important;
+	height: auto!important;
+	color: white!important;
+	line-height: 16px!important;
+	margin-bottom: 20px!important;
+	line-height: 1!important;
+	text-shadow: 2px 2px 5px rgba(90, 90, 90, 0.8);
+	font-family: Arial, Helvetica, sans-serif!important;
+	font-weight: bold;
+}
+
+
+/* container for text content right under fold */
+
+.xSubFoldContainer{
+	display: flex;
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+}
+.xSubFoldContainer2{
+	display: flex;
+	margin-top: 0px!important;
+	margin-bottom: 0px!important;
+	justify-content: center;
+}
+
+.xLandingParallaxContainer{
+	padding-left: 0px!important;
+	padding-right: 0px!important;
+}
+
+
+
+
+.xTestimonialTitleContainer{
+	display: flex;
+	justify-content: center;
+}
+.xTestimonialContainer{
+	display: flex;
+	justify-content: center;
+}
+.testimonial.testimonial-style-2 blockquote{
+	padding-left: 2.5em!important;
+	padding-right: 2.5em!important;
+}
+.xLandingMidCtaContainer{
+	margin-bottom: 0px!important;
+}
+.xLandingMidCtaContainer .container{
+	max-width: unset!important;
+}
+.call-to-action .call-to-action-content
+.owl-carousel{
+	text-align: center!important;
+}
+.xOurPartners{
+	width: fit-content;
+	margin-left: auto!important;
+	margin-right: auto!important;
+}
+
+.xOurPartnersCarouselContainer{
+	margin-top: 10px!important;
+	margin-bottom: 0px!important;
+	padding-bottom: 0px!important;
+}
+
+.xPortfolioTitleContainer{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px!important;
+}
+
+.xPortfolioNavContainer{
+	padding-top: calc(33px + 7vw)!important;
+	padding-bottom: 10px!important;
+	margin: 0px!important;
+}
+
+.xLandingPortfolioMidText{
+	flex-grow: 1.8!important;
+}
+
+.xPortfolioProjectTitle{
+	margin: 0px!important;
+}
+
+.container-fluid{
+	padding-left: 40px!important;
+	padding-right: 40px!important;
+}
+
+.xPortfolioPhotoContainer{
+	padding-top: 0px!important;
+}
+
+.xPortfolioPhotoBox{
+	padding-left: 2.5px!important;
+	padding-right: 2.5px!important;
+}
+.owl-stage{
+	display: flex!important;
+	align-items: center!important;
+}
+.xPartnersCarousel img{
+	width: 70%!important;
+	margin-left: auto;
+	margin-right: auto;
+}
+@media screen and (max-width: 769px){
+	.xPartnersCarousel img{
+		width: 30%!important;
+	}
+}
+
+.xLandingPortfolioDescriptionContainer{
+	margin-bottom: 0px!important;
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+}
+.xLandingShareCont{
+	display: flex;
+	width: 100%;
+	justify-content: flex-start;
+	padding-left: 25px;
+}
+
+.xLandingOurTeamContainer{
+	padding-top: calc(33px + 7vw)!important;
+	padding-bottom: calc(33px + 7vw)!important;
+}
+
+.xLandingContactContainer{
+padding-top: calc(33px + 7vh)!important;
+padding-bottom: calc(33px + 7vh)!important;
+}
+
+
+
+/* Landing Page Full Height Styles */
+.xLandingContFullh{
+	display: flex;
+	position: relative;
+	margin-top: 100px;
+	height: calc(100vh - 100px);
+	width: 100%;
+	overflow: hidden;
+	justify-content: center;
+}
+.xLandingContFullh h1{
+	color: white;
+	text-shadow: 1px 1px 3px rgba(70, 70, 70, 1);
+}
+.xTitleAnimationContFullh{
+	width: 100%;
+	height: fit-content;
+	position: absolute;
+	top: calc(50% - 100px);
+	z-index: 20;
+	text-align: center!important;
+}
+.xBannerFullhImg{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0px;
+	object-fit: cover;
+}
+
+
+
+
+
+
+
+
+.xServicesFoldContainer{
+	display: flex;
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+	justify-content: center;
+	text-align: center;
+}
+.xServicesFoldContainer div{
+	margin-bottom: 33px!important;
+}
+.xReadMoreTextCont{
+	padding-left: 2.5rem!important;
+	padding-right: 2.5rem!important;
+	width: 100%!important;
+}
+.readmore-overlay{
+	background: linear-gradient(rgba(230, 0, 0, 0) 0%, rgb(255, 255, 255) 80%)!important;
+}
+.xServicesBenefitsAccordionContainer{
+	width: 100%!important;
+}
+.xServicesBenefitsAccordionContainer h4{
+	margin-left: 30px;
+}
+.xServicesMidCtaContainer{
+	background: white!important;
+	margin-bottom: 0px!important;
+	padding-left: 2.5rem!important;
+	padding-right: 2.5rem!important;
+}
+.xServicesMidCtaContainer h3{
+	color: black!important;
+}
+.xServicesMidCtaContainer .btn{
+	color: white!important;
+	background-color: rgba(10, 125, 231, 0.8)!important;
+}
+.xServicesPhotoContainer{
+	min-width: 100vw;
+}
+.xCategoryNavList{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+	flex-wrap: wrap;
+}
+.xCategoryNavList li{
+	cursor: pointer;
+	list-style-type: none;
+	line-height: 24px;
+	font-family: 'Poppins', sans-serif;
+	color: black;
+	font-size: 14px;
+	padding: 6px 12px;
+	font-weight: bold;
+}
+.xCatActive{
+	border-bottom-color: #0088CC !important;
+	color: #0088CC !important;
+	border-bottom: 3px solid;
+    border-radius: 0;
+}
+.isotope-item{
+	text-align: unset!important;
+}
+.xSubCategoryCont .xServicesPhotoContainer{
+	display: none;
+}
+.xSubCategoryCont .portfolio-item{
+	position: relative!important;
+	height: 311px!important;
+	overflow: hidden!important;
+}
+.portfolio-item .thumb-info{
+	position: relative!important;
+	height: 100%!important;
+}
+.sort-destination img{
+	position: absolute;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.xSubCatNavList li{
+	cursor: pointer;
+}
+.xSubCatActive{
+	display: block!important;
+}
+
+
+
+
+
+
+
+
+.xContactTitleCss{
+	text-align: center!important;
+}
+.xContactTitleMargin{
+	margin-bottom: calc(33px + 7vw)!important;
+}
+.xContactSectionBot{
+	margin-bottom: calc(33px + 7vw)!important;
+}
+
+
+
+
+
+.xFaqTitleCont{
+	display: flex;
+	position: relative;
+	flex-direction: column!important;
+	align-items: center;
+	margin-top: calc(3.5rem + 100px)!important;
+	margin-bottom: calc(33px + 7vw)!important;
+	height: max-content;
+	overflow: hidden;
+}
+.xFaqAccordionCont{
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-bottom: 2.5rem;
+}
+.xFaqAccordionTitle{
+	margin-left: 30px;
+	color: black;
+	
+}
+.accordion .card-header a{
+	padding-left: 30px;
+	color: #0088CC;
+	font-weight: normal;
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 0.5px;
+}
+
+
+
+
+
+.xAboutLandingCont{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	position: relative;
+	margin-top: 100px;
+	height: calc(100vh - 100px);
+	width: 100%;
+	overflow: hidden;
+}
+.xAboutTitleCont{
+	display: flex;
+	flex-grow: 1;
+	position: relative;
+	flex-direction: column!important;
+	align-items: center;
+	overflow: hidden;
+}
+.xAboutTitleCont h1{
+	color: white;
+	
+}
+#xAboutTitleAnimationCont{
+	width: fit-content;
+	height: fit-content;
+	position: absolute;
+	top: 50%;
+	z-index: 20;
+}
+.xAboutBannerImg{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0px;
+	object-fit: cover;
+}
+.xAboutCounterCont{
+	display: flex;
+	width: 100%!important;
+	margin-right: 0px!important;
+	margin-left: 0px!important;
+	justify-content: space-evenly;
+
+}
+.xAboutCounterCont div{
+	padding-left: 0px!important;
+	padding-right: 0px!important;
+	flex-grow: 1;
+}
+.xAboutCounterCont label{
+	font-size: calc(14px + 0.5vw)!important;
+}
+.xAboutCounterCont strong{
+	font-size: calc(18px + 2vw)!important;
+	padding-top: 0.5vw;
+	padding-bottom: 0.5vw;
+}
+.xAboutReadMoreCont{
+	padding-left: 40px!important;
+	padding-right: 40px!important;
+	width: 100%!important;
+}
+
+@media only screen and (max-width: 769px){
+	.xAboutBannerImg{
+		object-position: left;
+	}
+	.xAboutCounterCont{
+		flex-wrap: wrap;
+	}
+	.xAboutCounterCont div{
+		width: 50vw;
+	}
+}
+
+
+
+
+
+
+.xWhyContentCont{
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+
+
+
+
+
+
+.xWhySectionCont{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	position: relative;
+	width: 100vw;
+	height: auto;
+	min-height: 311px;
+	overflow: hidden;
+}
+
+.xWhySectionImgCont{
+	position: relative;
+	height: 85vh;
+	width: 100%;
+}
+.xWhySectionCont Img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.xWhySectionBody{
+	margin-bottom: 0px!important;
+	width: 100vw;
+	z-index: 20;
+	color: rgb(0, 0, 0);
+	background: rgb(228, 228, 228);
+}
+.xWhySectionTitle{
+	width: 100%;
+	z-index: 20;
+	position: absolute;
+	font-size: 40px;
+	font-weight: bold;
+	top: 15%;
+	margin-bottom: 0px;
+	text-shadow: 1px 1px 3px rgba(70, 70, 70, 1);
+}
+
+
+
+
+
+#xWhyTitle1{
+	color: rgb(255, 255, 255);
+	padding-right: 7vw;
+	text-align: right;
+}
+
+
+.xWhyTitle2{
+	color: rgb(255, 255, 255);
+	padding-left: 7vw;
+}
+#whyImg2{
+	object-position: top;
+}
+
+
+
+
+
+
+
+
+
+
+.xFooterCont{
+	justify-content: space-evenly;
+}
+.xFooterSectCont{
+	width: 100%!important;
+	flex: none;
+	max-width: none;
+}
+.xFooterItemList{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.xFooterItemList li{
+	min-width: fit-content;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 33px;
+}
+#footer{
+	margin-top: 33px!important;
+}
+
+
+
+
+
+
+
+
