@@ -28,10 +28,6 @@ h3 {
 p {
 	font-size: calc(14px + 0.5vw)!important;
 }
-.xSubTitleSmall{
-	text-transform: none!important;
-	font-size: calc(14px + 0.5vw)!important;
-}
 .xLandingCtaText{
 	color: white;
 }
@@ -48,18 +44,16 @@ p {
 		padding-bottom: 0.5vw;
 	}
 	p {
-		font-size: 15px!important;
+		line-height: 1.5;
 	}
-	.xSubTitleSmall{
-		text-transform: none!important;
-		font-size: 15px!important;
-	}
-	
 }
 @media screen and (max-width: 510px) {
 	.xLandingSubTextColor{
 		display:none!important;
 	}
+}
+.xTextSize{
+	font-size: 16px;
 }
 
 
@@ -109,9 +103,14 @@ p {
   transition-delay:  0s!important;
 }
 .xStoryPhotoCont{
-	height: 311px;
+	min-height: 52vw;
 	width: 50%;
 	overflow: hidden;
+}
+@media screen and (min-width: 991px) {
+	.xStoryPhotoCont{
+		min-height: 25vw;
+	}
 }
 .xStoryPhotoCont img{
 	top: 0px;
@@ -123,8 +122,12 @@ p {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	text-align: center!important;
-
+}
+@media screen and (max-width: 991px) {
+	.xStoryTextCont{
+		margin-top: 80px;
+		margin-bottom: 80px;
+	}
 }
 .xCardCont{
 	display: flex;
@@ -147,9 +150,6 @@ p {
 	text-align: center!important;
 }
 .xStorySectionCont{
-	margin-left: 33px;
-	margin-right: 33px;
-	margin-bottom: 33px!important;
 	overflow: hidden;
 }
 .card-img, .card-img-bottom, .card-img-top {
@@ -163,6 +163,17 @@ p {
 	.xStoryTextCont{
 		order: 2;
 	}
+}
+.row{
+	display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.xLandingOurTeamContainer .card{
+	background-color: rgb(228, 228, 228);
 }
 
 
@@ -323,6 +334,7 @@ html.sticky-header-active #header .header-nav.header-nav-links:not(.header-nav-l
 
 .xSubFoldContainer{
 	display: flex;
+	justify-content: center;
 	padding-left: 2.5rem;
 	padding-right: 2.5rem;
 }
@@ -331,6 +343,18 @@ html.sticky-header-active #header .header-nav.header-nav-links:not(.header-nav-l
 	margin-top: 0px!important;
 	margin-bottom: 0px!important;
 	justify-content: center;
+	max-width: calc(1000px + 5vw);
+}
+.xCol-half-section{
+	width: 100%;
+    min-height: 1px;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    position: relative;
+    max-width: 1000px;
+}
+.XImg-half-section{
+	min-height: 52vw;
 }
 
 .xLandingParallaxContainer{
@@ -338,6 +362,11 @@ html.sticky-header-active #header .header-nav.header-nav-links:not(.header-nav-l
 	padding-right: 0px!important;
 }
 
+@media screen and (min-width: 991px) {
+	.XImg-half-section{
+		min-height: 25vw;
+	}
+}
 
 
 
@@ -363,15 +392,10 @@ html.sticky-header-active #header .header-nav.header-nav-links:not(.header-nav-l
 .owl-carousel{
 	text-align: center!important;
 }
-.xOurPartners{
-	width: fit-content;
-	margin-left: auto!important;
-	margin-right: auto!important;
-}
 
 .xOurPartnersCarouselContainer{
-	margin-top: 10px!important;
 	margin-bottom: 0px!important;
+	margin-top: 0px!important;
 	padding-bottom: 0px!important;
 }
 
@@ -469,6 +493,13 @@ padding-bottom: calc(33px + 7vh)!important;
 	z-index: 20;
 	text-align: center!important;
 }
+.xTitleCont{
+	width: 100%;
+	height: fit-content;
+	z-index: 20;
+	text-align: center!important;
+	margin-top: 25vh;
+}
 .xBannerFullhImg{
 	position: absolute;
 	height: 100%;
@@ -561,16 +592,20 @@ padding-bottom: calc(33px + 7vh)!important;
 	height: 311px!important;
 	overflow: hidden!important;
 }
-.portfolio-item .thumb-info{
-	position: relative!important;
-	height: 100%!important;
+.thumb-info-wrapper{
+	height: 35vw;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.sort-destination img{
-	position: absolute;
-	top: 0px;
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
+@media screen and (max-width: 576px) {
+	.thumb-info-wrapper{
+		height: 60vw;
+	}
+}
+.thumb-info img{
+	align-self: center;
 }
 .xSubCatNavList li{
 	cursor: pointer;
@@ -745,9 +780,17 @@ padding-bottom: calc(33px + 7vh)!important;
 	height: 100%;
 	object-fit: cover;
 }
+.xWhySectionTextCont{
+	display: flex;
+	padding: 7vw!important;
+	flex-direction:column; 
+	align-items:center; 
+	background: rgb(228, 228, 228);
+
+}
 .xWhySectionBody{
 	margin-bottom: 0px!important;
-	width: 100vw;
+	width: 100%;
 	z-index: 20;
 	color: rgb(0, 0, 0);
 	background: rgb(228, 228, 228);

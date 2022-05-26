@@ -27,7 +27,7 @@ Theme Version:	8.3.0
 }
 
 .accordion .card-title {
-	font-size: 16px;
+	font-size: calc(14px + 0.5vw);
 }
 
 .accordion .card-header {
@@ -40,7 +40,7 @@ Theme Version:	8.3.0
 .accordion .card-header a {
 	cursor: pointer;
 	display: block;
-	padding: 10px 20px;
+	padding: 20px 20px;
 }
 
 .accordion .card-header a:hover, .accordion .card-header a:focus {

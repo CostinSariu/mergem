@@ -236,7 +236,7 @@ html .svg-stroke-color-light svg polygon {
 
 html .bg-color-primary,
 html .bg-primary {
-	background-color: #0088CC !important;
+	background-color: black !important;
 }
 
 html .bg-color-hover-primary:hover,
