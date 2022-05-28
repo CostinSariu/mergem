@@ -519,19 +519,34 @@ padding-bottom: calc(33px + 7vh)!important;
 	display: flex;
 	padding-left: 2.5rem;
 	padding-right: 2.5rem;
-	justify-content: center;
-	text-align: center;
-}
-.xServicesFoldContainer div{
-	margin-bottom: 33px!important;
+	text-align: start;
+	justify-content: start;
+	padding-top: 33px;
 }
 .xReadMoreTextCont{
 	padding-left: 2.5rem!important;
 	padding-right: 2.5rem!important;
+	padding-bottom: 7vw;
+	padding-top: 7vw;
 	width: 100%!important;
 }
+@media  screen and (max-width: 994px) {
+	.xServicesFoldContainer{
+		padding-top: 0px;
+	}
+	.xReadMoreTextCont{
+		padding-bottom: calc(33px + 7vw);
+		padding-top: 0px;
+	}
+}
+.xReadMoreTextCont .xReadMoreWhite{
+	background-color: white;
+}
+.xReadMoreWhite .readmore-overlay{
+	background: linear-gradient(rgba(230, 0, 0, 0) 0%, white 70%)!important;
+}
 .readmore-overlay{
-	background: linear-gradient(rgba(230, 0, 0, 0) 0%, rgb(255, 255, 255) 80%)!important;
+	background: linear-gradient(rgba(230, 0, 0, 0) 0%, #F7F7F7 70%)!important;
 }
 .xServicesBenefitsAccordionContainer{
 	width: 100%!important;
@@ -656,13 +671,26 @@ padding-bottom: calc(33px + 7vh)!important;
 	
 }
 .accordion .card-header a{
-	padding-left: 30px;
+	padding-left: 2.5rem;
 	color: #0088CC;
 	font-weight: normal;
 	font-family: 'Poppins', sans-serif;
 	letter-spacing: 0.5px;
 }
 
+.xCard{
+	display: flex; 
+	justify-content:center; 
+	align-items: center;
+	overflow: hidden;
+	height: 20vw;
+	margin-bottom: 30px;
+}
+@media screen and (max-width: 550px) {
+	.xCard{
+		height: 40vw;
+	}
+}
 
 
 
