@@ -1,2 +1,0 @@
-# mergem
-Client, Mergem.ca
